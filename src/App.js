@@ -23,7 +23,6 @@ class App extends React.Component {
             <Route path="/Lofi" component={Lofi} />
             <Route path="/jazz" component={Jazz} />
             <Route path="/classical" component={Classical} />
-            <Route component={Error} />
           </Switch>
         </div>
       </BrowserRouter>
