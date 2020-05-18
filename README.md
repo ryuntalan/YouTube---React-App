@@ -1,3 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+YouTube React App - The Cafe
+I use YouTube's Data API v3 to access lofi, smooth jazz, and classical music to create personalized online study environments.
 
-With React I followed a tutorial to build a Youtube Clone Application.
+Here's the link to this project: http://ryuntalan.github.io/YouTube---React-App
