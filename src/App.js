@@ -6,7 +6,6 @@ import Home from "./components/Home";
 import Lofi from "./components/Lofi";
 import Jazz from "./components/Jazz";
 import Classical from "./components/Classical";
-import Error from "./components/Error";
 import Matcha from "./img/Matcha.png";
 
 class App extends React.Component {
