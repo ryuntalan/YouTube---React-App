@@ -1,61 +1,32 @@
 import React from "react";
 
-import { Grid } from "@material-ui/core";
+import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 
-import { SearchBar, VideoDetail, VideoList } from "./components";
-
-import youtube from "./api/youtube";
+import Home from "./components/Home";
+import Lofi from "./components/Lofi";
+import Jazz from "./components/Jazz";
+import Classical from "./components/Classical";
+import Error from "./components/Error";
+import Matcha from "./img/Matcha.png";
 
 class App extends React.Component {
-  state = {
-    videos: [],
-    selectedVideo: null
-  };
-
-  componentDidMount() {
-    this.handleSubmit("lofi beats");
-  }
-
-  onVideoSelect = video => {
-    this.setState({ selectedVideo: video });
-  };
-
-  handleSubmit = async searchTerm => {
-    const response = await youtube.get("search", {
-      params: {
-        part: "snippet",
-        maxResults: 5,
-        key: "AIzaSyC2l5lTn2wi7D_Ah_r7U5DclPIMUnNPtmU",
-        q: searchTerm
-      }
-    });
-
-    this.setState({
-      videos: response.data.items,
-      selectedVideo: response.data.items[0]
-    });
-  };
-
   render() {
-    const { selectedVideo, videos } = this.state;
     return (
-      <Grid justify="center" container spacing={10}>
-        <Grid item xs={12}>
-          <Grid container spacing={8}>
-            <Grid item xs={12}>
-              <SearchBar onFormSubmit={this.handleSubmit} />
-            </Grid>
+      <BrowserRouter>
+        <div>
+          <NavLink to="/">
+            <img className="logo" src={Matcha} alt="Matcha cafe logo" />
+          </NavLink>
 
-            <Grid item xs={8}>
-              <VideoDetail video={selectedVideo} />
-            </Grid>
-
-            <Grid item xs={4}>
-              <VideoList videos={videos} onVideoSelect={this.onVideoSelect} />
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/Lofi" component={Lofi} />
+            <Route path="/jazz" component={Jazz} />
+            <Route path="/classical" component={Classical} />
+            <Route component={Error} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }

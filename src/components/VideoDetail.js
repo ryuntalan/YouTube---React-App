@@ -9,25 +9,14 @@ const VideoDetail = ({ video }) => {
 
   return (
     <React.Fragment>
-      <Paper elevation={4} style={{ height: "40%" }}>
+      <Paper elevation={0} style={{ height: "40%" }}>
         <iframe
           frameBorder="0"
-          height="100%"
-          width="100%"
+          height="300px"
+          width="500px"
           title="Video Player"
           src={videoSrc}
         />
-      </Paper>
-      <Paper elevation={3} style={{ padding: "10px" }}>
-        <Typography variant="h4">
-          {video.snippet.title} - {video.snippet.channelTitle}
-        </Typography>
-
-        <Typography variant="subtitle1">
-          {video.snippet.channelTitle}
-        </Typography>
-
-        <Typography variant="subtitle2">{video.snippet.description}</Typography>
       </Paper>
     </React.Fragment>
   );
