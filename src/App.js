@@ -19,7 +19,7 @@ class App extends React.Component {
           </NavLink>
 
           <Switch>
-            <Route path="/" component={Home} exact />
+            <Route path="/YouTube---React-App/" component={Home} exact />
             <Route path="/Lofi" component={Lofi} />
             <Route path="/jazz" component={Jazz} />
             <Route path="/classical" component={Classical} />
