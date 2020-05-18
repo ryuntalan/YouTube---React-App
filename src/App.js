@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div>
-          <NavLink to="/">
+          <NavLink to="/YouTube---React-App/">
             <img className="logo" src={Matcha} alt="Matcha cafe logo" />
           </NavLink>
 
