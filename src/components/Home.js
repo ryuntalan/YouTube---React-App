@@ -15,7 +15,14 @@ class Home extends React.Component {
             <Header></Header>
           </Grid>
 
-          <Grid item xs={12} sm={6}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            direction="column"
+            justify="center"
+            alignItems="center"
+          >
             <Rooms></Rooms>
           </Grid>
         </Grid>

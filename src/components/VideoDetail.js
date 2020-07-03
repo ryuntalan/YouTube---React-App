@@ -9,11 +9,10 @@ const VideoDetail = ({ video }) => {
 
   return (
     <React.Fragment>
-      <Paper elevation={0} style={{ height: "40%" }}>
+      <Paper elevation={0} className="screen-size">
         <iframe
           frameBorder="0"
-          height="300px"
-          width="500px"
+          className="video-screen"
           title="Video Player"
           src={videoSrc}
         />

@@ -48,18 +48,21 @@ class Lofi extends React.Component {
           direction="column"
           justify="center"
           alignItems="center"
-          spacing={2}
+          spacing={0}
         >
           <Grid item xs={12} sm={6}>
             <VideoDetail video={selectedVideo} />
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <SearchBar onFormSubmit={this.handleSubmit} />
+            <SearchBar
+              onFormSubmit={this.handleSubmit}
+              className="search-bar"
+            />
           </Grid>
           <Grid item>
             <h3 className="suggestions">
-              search suggestions: chillhop, cafelofi, groovy beats
+              <b>search suggestions:</b> chillhop, cafelofi, groovy beats
             </h3>
           </Grid>
         </Grid>

@@ -59,7 +59,7 @@ class Lofi extends React.Component {
 
           <Grid item>
             <h3 className="suggestions">
-              search suggestions: smooth hop, chill jazz, jazz beats
+              <b>search suggestions:</b> smooth hop, chill jazz, jazz beats
             </h3>
           </Grid>
         </Grid>

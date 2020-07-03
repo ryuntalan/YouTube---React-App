@@ -27,8 +27,8 @@ h2 {
 }
 
 .button {
-  margin: 20px 20px;
-  width: 170px;
+  margin: 25px 2%;
+  width: 28%;
 }
 
 .button:hover {
@@ -48,4 +48,19 @@ h2 {
 .suggestions {
   font-weight: 400;
   padding-bottom: 500px;
+  font-size: 95%;
+}
+
+.video-screen {
+  width: 100%;
+}
+
+.screen-size {
+  display: flex;
+  justify-content: center;
+
+  width: 50vw;
+  height: 30vw;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }

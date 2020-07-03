@@ -10,7 +10,7 @@ import Classical from "../img/Classical.png";
 class Rooms extends React.Component {
   render() {
     return (
-      <div>
+      <div rooms justify="center" alignItems="center">
         <NavLink to="/Lofi">
           <img className="button" src={Lofi} alt="lofi button" />
         </NavLink>

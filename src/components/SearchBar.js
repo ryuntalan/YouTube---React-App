@@ -1,14 +1,14 @@
 import React from "react";
 import { Paper, TextField } from "@material-ui/core";
 
-// CURRENTLY RESTRUCTURING YOUTUBE FOR BETTER LOOK
 const searchBar = {
   padding: "5px 20px",
-  border: "1px solid #C0C0C0"
+  border: "1px solid #C0C0C0",
+  width: "45vw"
 };
 
 const textBar = {
-  width: "500px"
+  width: "100%"
 };
 
 class SearchBar extends React.Component {
